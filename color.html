@@ -9,7 +9,6 @@
       .colorBox {
         height: 30vh;
         min-width: 5vw;
-        border: 1px solid black;
       }
 
       #colorGrid {
@@ -20,13 +19,11 @@
     </style>
   </head>
   <body>
-    <h2>Choose a color:</h2>
-    <input type="color" id="colorPicker" name="color" value="#ffffff" />
+    <label for="colorPicker"><h2>Choose a color:</h2></label>
+    <input type="color" id="colorPicker" name="color" />
 
-    <label for="colorSelect"><h2>Choose a harmony style:</h2></label>
-
-    <select id="colorSelect">
-      <option value="">--Please choose an option--</option>
+    <label for="stylePicker"><h2>Choose a harmony style:</h2></label>
+    <select id="stylePicker">
       <option value="analogous">Analogous</option>
       <option value="monochromatic">Monochromatic</option>
       <option value="triad">Triad</option>
