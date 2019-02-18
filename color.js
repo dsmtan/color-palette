@@ -19,7 +19,6 @@ let box5 = document.querySelector("#box5");
 window.addEventListener("load", init, false);
 
 function init() {
-  colorPicker.value = "#ffffff";
   colorPicker.addEventListener("input", updateColors, false);
   stylePicker.addEventListener("input", updateColors, false);
 }
@@ -34,14 +33,12 @@ function updateColors() {
   let baseG = hexToRGB(hexColor)[1];
   let baseB = hexToRGB(hexColor)[2];
 
-  console.log(baseR, baseG, baseB);
-
   // call function rgbToHSL to convert baseRGB values to hsl
   let baseH = rgbToHSL(baseR, baseG, baseB).h;
   let baseS = rgbToHSL(baseR, baseG, baseB).s;
   let baseL = rgbToHSL(baseR, baseG, baseB).l;
 
-  console.log(baseH, baseS, baseL);
+  //   console.log(baseH, baseS, baseL);
 
   // run relative function of the selected harmony style
   if (stylePicker.value === "analogous") {
